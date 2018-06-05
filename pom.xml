@@ -291,6 +291,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>Spring</finalName>
+		<finalName>ssm_jc</finalName>
 	</build>
 </project>
