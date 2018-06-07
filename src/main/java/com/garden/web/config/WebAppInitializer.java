@@ -4,6 +4,8 @@ import javax.servlet.Filter;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration.Dynamic;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.garden.web.filter.ExtraFilter;
 /**
  * Web应用初始类
  * @author Garden
@@ -29,10 +31,10 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 	@Override
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
-		return new String[] {"/"};
+		return new String[] {"/extra/*","/"};
 	}
 	
-	/*定义过滤器并将过滤器映射至DispatcherServlet*/
+//	/*定义过滤器并将过滤器映射至DispatcherServlet*/
 //	@Override
 //	protected Filter[] getServletFilters(){
 //		return new Filter[]{new ExtraFilter()};
